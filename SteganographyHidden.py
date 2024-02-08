@@ -50,12 +50,11 @@ def hide_message(audio_file, message_file, output_file, bit_position=0):
     end_time = time.time()
     elapsed_time = end_time - start_time
 
-    # Stampa il tempo di esecuzione
     print(f"Tempo di esecuzione: {elapsed_time} secondi")
 
 audio_file = 'orchestra.wav'  # File audio di input
 message_file = 'prova.txt'  # File contenente il messaggio da nascondere
 output_file = 'orchestraprova.wav'  # File audio di output
-bit_position = 15  # Cambia questa posizione per modificare il bit desiderato
+bit_position = 15  # Livello di bit dove inserire il messaggio
 
 hide_message(audio_file, message_file, output_file, bit_position)

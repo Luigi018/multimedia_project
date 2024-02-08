@@ -47,9 +47,9 @@ def compress_audio(input_file, output_file):
     sound = AudioSegment.from_wav(input_file)
     sound.export(output_file, format="mp3", bitrate="128k")
 
-audio_file = 'orchestra.wav'
-message_file = '500000.txt'
-output_file = 'jetengine500000(0).wav'
-bit_position = 0
+audio_file = 'orchestra.wav' # File audio di input
+message_file = '500000.txt' # File contenente il messaggio da nascondere
+output_file = 'jetengine500000(0).wav' # File audio di output
+bit_position = 0 # Livello di bit dove inserire il messaggio
 
 hide_message(audio_file, message_file, output_file, bit_position)

@@ -36,14 +36,13 @@ def extract_message(audio_file, bit_length, lsb_position=0):
     end_time = time.time()
     elapsed_time = end_time - start_time
 
-    # Stampa il tempo di esecuzione
     print(f"Tempo di esecuzione: {elapsed_time} secondi")
     return message
 
 audio_file = 'orchestraprova.wav'  
 
-bit_length = 48  # Esempio di lunghezza del messaggio in bit, va adattato in base al caso d'uso
-lsb_position = 15  # Cambia questa posizione per estrarre il bit 15
+bit_length = 8000  # Lunghezza file in bit
+lsb_position = 15  # Posizione del bit da estrarre
 
 message = extract_message(audio_file, bit_length, lsb_position)
 print("Messaggio estratto:", message)

@@ -22,8 +22,6 @@ def calculate_spectrogram_mp3(audio_file, title):
     plt.colorbar(label='Potenza (dB)')
     plt.show()
 
-# Percorso del file audio MP3 da analizzare
-audio_file_mp3 = 'jetengine500000(0).mp3'  # Sostituisci con il percorso corretto al tuo file MP3
+audio_file_mp3 = 'jetengine500000(0).mp3' 
 
-# Calcola e visualizza lo spettrogramma per l'audio MP3
 calculate_spectrogram_mp3(audio_file_mp3, 'Spettrogramma - Audio MP3')

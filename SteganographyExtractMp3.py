@@ -29,11 +29,10 @@ def extract_message_from_mp3(audio_file, bit_length, lsb_position=0):
     message = bits_to_text(bits)
     return message
 
-audio_file = 'jetengine1000(0).mp3'  # Sostituisci con il percorso al tuo file MP3
+audio_file = 'jetengine1000(0).mp3'  # Percorso al tuo file MP3
 
-# Si assume di conoscere la lunghezza del messaggio in bit
-bit_length = 8000  # Adatta questa lunghezza in base al tuo caso d'uso
-lsb_position = 0  # Cambia questa posizione per estrarre il bit desiderato
+bit_length = 8000  # Lunghezza messaggio in bit
+lsb_position = 0  # Posizione bit estratto
 
 message = extract_message_from_mp3(audio_file, bit_length, lsb_position)
 print("Messaggio estratto:", message)
